@@ -9,7 +9,7 @@ Start :
 npm install && npm start
 ```
 
-If npm start does not work : 
+If 'npm start' does not work : 
 
 ```bash
 npm run watch
