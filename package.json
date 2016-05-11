@@ -1,6 +1,6 @@
 {
   "name": "soundcloud-player",
-  "productName":"Soundcloud Player",
+  "productName": "Soundcloud Player",
   "version": "1.0.0",
   "description": "Soundcloud Demo Player",
   "main": "main.js",
@@ -23,7 +23,7 @@
     "react-autocomplete": "^1.0.0-rc2",
     "react-dom": "^0.14.7",
     "react-sound": "^0.4.0",
-    "soundmanager2": "^2.97.20150601-a",
-    "reactify": "*"
+    "reactify": "*",
+    "soundmanager2": "^2.97.20150601-a"
   }
 }

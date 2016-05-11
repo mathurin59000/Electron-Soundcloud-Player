@@ -4,6 +4,8 @@ import React from 'react';
 // Import ClassNames
 import ClassNames from 'classnames';
 
+"use strict"; 
+
 // Player component class
 class Player extends React.Component {
 

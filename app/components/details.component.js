@@ -1,6 +1,8 @@
 // Import React
 import React from 'react';
 
+"use strict"; 
+
 class Details extends React.Component {
   // Render
   render(){

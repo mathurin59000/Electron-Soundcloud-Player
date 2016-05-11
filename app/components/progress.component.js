@@ -1,6 +1,8 @@
 // Import React
 import React from 'react';
 
+"use strict"; 
+
 // Create Progress component class
 class Progress extends React.Component {
 

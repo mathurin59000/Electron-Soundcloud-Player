@@ -1,6 +1,8 @@
 import React from 'react';
 import Autocomplete from 'react-autocomplete';
 
+"use strict"; 
+
 var Search = React.createClass({
 	handleRenderItem(item, isHighlighted){
 	    // Some basic style

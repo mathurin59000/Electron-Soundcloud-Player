@@ -14,6 +14,8 @@ import Progress from '../components/progress.component';
 import Search from '../components/search.component';
 import Footer from '../components/footer.component';
 
+"use strict"; 
+
 class AppContainer extends React.Component {
 
   constructor(props) {

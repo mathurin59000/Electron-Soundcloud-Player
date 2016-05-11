@@ -5,6 +5,8 @@ import ReactDOM from 'react-dom';
 //Import Container component
 import AppContainer from './containers/app.container'
 
+"use strict"; 
+
 class App extends React.Component {
   render () {
     return (

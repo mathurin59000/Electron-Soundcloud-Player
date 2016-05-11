@@ -1,3 +1,4 @@
+"use strict"; 
 const electron = require('electron')
 // Module to control application life.
 const app = electron.app
@@ -10,13 +11,37 @@ let mainWindow
 
 function createWindow () {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 800, height: 600})
+  //mainWindow = new BrowserWindow({width: 800, height: 600})
+  let atomScreen = require('screen');
+
+    const notifWidth = 510;
+    const notifHeight = 510;
+    const screenInfo = atomScreen.getAllDisplays();
+    const workArea = screenInfo[0].workArea;
+
+    // Create the browser window.
+    mainWindow = new BrowserWindow({
+        x: workArea.width - (notifWidth ),
+        y: workArea.height - (notifHeight),
+        //build
+        //width: notifWidth,
+        //height: notifHeight,
+        frame: false,
+        //show: false,
+        //dev
+        width: notifWidth,
+        height: notifHeight,
+        //skipTaskbar: true,
+        hasShadow: false,
+        //alwaysOnTop: true,
+        transparent: true
+    });
 
   // and load the index.html of the app.
   mainWindow.loadURL('file://' + __dirname + '/index.html')
 
   // Open the DevTools.
-  mainWindow.webContents.openDevTools()
+  //mainWindow.webContents.openDevTools()
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
